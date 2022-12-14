@@ -1,0 +1,26 @@
+server:
+  port: 8123
+  servlet:
+  # 项目contextPath
+    context-path: /live
+ffmpeg:
+  path:
+  #是否启用默认的ffmpeg，如果启用默认ffmpeg，上面配置的path就没有用了
+  defaultpathEnable: true
+  #存放任务的默认Map的初始化大小
+  size: 10
+  #事件回调通知接口地址
+  callback: http://127.0.0.1/callback
+  #网络超时设置（毫秒）
+  timeout: 300
+  #开启保活线程
+  keepalive: true
+  #是否输出debug消息
+  debug: true
+
+yf:
+  server.url: http://10.10.40.122:9909/live?port=1985&app=live&stream=
+  # 推流服务器ip
+  server.addr: 10.10.40.122
+  # 推流服务器端口
+  server.port: 1985
